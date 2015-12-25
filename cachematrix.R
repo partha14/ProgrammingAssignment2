@@ -1,8 +1,8 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## this function creates and returns four functions: set() to set the matrix, get() to get the matrix, setinv() to set the inverse
-## and getinv() to get the inverse 
+## this function creates and returns the following four functions: set() to set the matrix passed, get() to get the matrix already set, 
+## setinv() to set the inverse of the matrix and getinv() to get the inverse of the matrix already set
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -19,7 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## this function retrieves the inverse if already set, else computes the inverse from the object returned from the previous function
+## this function retrieves the inverse if already set, else computes the inverse of the matrix returned
+## from the get function of the object returned from the previous function
 
 cacheSolve <- function(x, ...) {
         m <- x$getinv()
